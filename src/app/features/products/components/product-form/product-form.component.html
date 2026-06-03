@@ -1,0 +1,25 @@
+<div class="form-card">
+  <div class="field">
+    <label>Nombre</label>
+    <input
+      type="text"
+      [(ngModel)]="name"
+      placeholder="Nombre del producto"
+    />
+  </div>
+
+  <div class="field">
+    <label>Precio</label>
+    <input
+      type="number"
+      [(ngModel)]="price"
+      placeholder="0"
+    />
+  </div>
+
+  <button
+    (click)="createProduct()"
+    [disabled]="!name || price <= 0">
+    Crear
+  </button>
+</div>

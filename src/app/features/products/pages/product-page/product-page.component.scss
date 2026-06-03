@@ -1,0 +1,19 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background-color: #121212;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+h1 {
+  display: none;
+}
+
+.page-layout {
+  display: flex;
+  gap: 2rem;
+  height: calc(100vh - 4rem);
+  max-width: 1100px;
+  margin: 0 auto;
+}

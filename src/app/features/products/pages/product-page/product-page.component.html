@@ -1,0 +1,10 @@
+<div class="page-layout">
+  <app-product-list
+    [products]="products"
+    (productDeleted)="deleteProduct($event)">
+  </app-product-list>
+
+  <app-product-form
+    (productCreated)="loadProducts()">
+  </app-product-form>
+</div>

@@ -1,0 +1,7 @@
+<div class="card">
+  <div class="card-info">
+    <h3>{{ product.name }}</h3>
+    <p class="price">${{ product.price | number }}</p>
+  </div>
+  <button class="delete-btn" (click)="deleteProduct()">✕</button>
+</div>
